@@ -88,8 +88,8 @@ AS
    EXEC msdb.dbo.sp_send_dbmail 
                         @profile_name = 'Camilo Castro', 
                         @recipients = 'williamjsg@gmail.com' , 
-                        @body = 'Hay cambios en la Base de Datos AdventureWorks2019', 
-                        @subject = 'Hubo cambios en la tabla de ProductCategory' 
+                        @body = 'Changes made on AdventureWorks2019 database. Alerta enviada', 
+                        @subject = 'Changes on ProductCategory table. Alert triggered.' 
 
 GO
 
