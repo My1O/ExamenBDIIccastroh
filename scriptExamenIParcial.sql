@@ -53,12 +53,12 @@ GO
 EXECUTE msdb.dbo.sysmail_add_account_sp  
     @account_name =  'Camilo Castro',  
     @description =   'Configuracion de Correo',  
-    @email_address = 'castro_h24@outlook.com',  
+    @email_address = 'dbpromecys10@outlook.com',  
     @display_name =  'Administrador',  
     @mailserver_name = 'smtp-mail.outlook.com',
     @port = 587,
     @enable_ssl = 1,
-    @username = 'castro_h24@outlook.com',
+    @username = 'dbpromecys10',
     @password = '***' ;  
 GO
 
@@ -69,9 +69,8 @@ EXECUTE msdb.dbo.sysmail_add_profileaccount_sp
     @sequence_number =1 ;  
 GO
 
-
 EXEC msdb.dbo.sp_send_dbmail
-     @profile_name = 'Camilo Castro',
+     @profile_name = 'William Sanchez',
      @recipients = 'williamjsg@gmail.com',
      @body = 'Enviando correo de prueba',
      @subject = 'Probando configuracion database mail';
